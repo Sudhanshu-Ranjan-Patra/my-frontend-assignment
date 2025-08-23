@@ -1,0 +1,272 @@
+@import "tailwindcss";
+
+/* Container */
+.datatable-container {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f9fafb, #f3f4f6);
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  margin: 1.5rem auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.datatable-container:hover {
+  transform: scale(1.01);
+}
+
+/* Title */
+.datatable-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* DataTable Input/Search */
+.datatable input[type="text"] {
+  width: 100%;
+  max-width: 350px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.datatable input[type="text"]:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* Table Hover Effect */
+.datatable table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.datatable th,
+.datatable td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.datatable tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Selected Rows Section */
+.selected-rows {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.selected-rows-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 0.75rem;
+}
+
+.selected-rows-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #555;
+}
+
+.selected-row-item {
+  margin-bottom: 0.25rem;
+  transition: color 0.2s;
+}
+
+.selected-row-item:hover {
+  color: #000;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .datatable-container {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .datatable-title {
+    font-size: 1.5rem;
+  }
+
+  .datatable input[type="text"] {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .datatable th,
+  .datatable td {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .datatable-title {
+    font-size: 1.25rem;
+  }
+
+  .datatable input[type="text"] {
+    font-size: 0.9rem;
+  }
+
+  .selected-rows-title {
+    font-size: 1rem;
+  }
+}
+.input-demo-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.input-card {
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeUp 0.5s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.input-card h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Add a little animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Container styling */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9fafb, #e5e7eb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+/* Card styling */
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Heading */
+.card h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1f2937;
+}
+
+/* InputField container */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Label */
+.input-group label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* Input box */
+.input-group input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover & Focus effects */
+.input-group input:hover,
+.input-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Helper text */
+.input-group .helper-text {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+/* Variants */
+.input-group.filled input {
+  background-color: #f3f4f6;
+}
+
+.input-group.outlined input {
+  background-color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .card {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .card h1 {
+    font-size: 1.5rem;
+  }
+
+  .input-group input {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+}
