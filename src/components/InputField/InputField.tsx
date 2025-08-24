@@ -58,9 +58,11 @@ export const InputField: React.FC<InputFieldProps> = ({
           placeholder={placeholder}
           disabled={disabled}
           aria-invalid={invalid}
-          className={`w-full rounded-lg outline-none pr-10 ${sizeClasses[size]} ${variantClasses[variant]} ${
-            invalid ? "border-red-500" : ""
-          } ${disabled ? "bg-gray-200 cursor-not-allowed" : ""}`}
+          className={`w-full rounded-lg outline-none pr-10 ${
+            sizeClasses[size]
+          } ${variantClasses[variant]} ${invalid ? "border-red-500" : ""} ${
+            disabled ? "bg-gray-200 cursor-not-allowed" : ""
+          }`}
         />
 
         {/* Clear Button */}
@@ -68,7 +70,9 @@ export const InputField: React.FC<InputFieldProps> = ({
           <button
             type="button"
             onClick={() =>
-              onChange?.({ target: { value: "" } } as React.ChangeEvent<HTMLInputElement>)
+              onChange?.({
+                target: { value: "" },
+              } as React.ChangeEvent<HTMLInputElement>)
             }
             className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700 text-sm"
             aria-label="Clear input"

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { DataTable } from "./components/DataTable/DataTable"; // adjust path if needed
+import { DataTable } from "./components/DataTable/DataTable";
 import type { Column } from "./components/DataTable/DataTable";
 import { InputField } from "./components/InputField/InputField";
 import "./App.css";
@@ -30,10 +30,6 @@ function App() {
 
   return (
     <>
-
-
-
-
       <div className="input-demo-container">
         <div className="input-card">
           <h1>Modern Input Demo</h1>
@@ -94,7 +90,6 @@ function App() {
           </div>
         )}
       </div>
-
     </>
   );
 }
