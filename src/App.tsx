@@ -21,7 +21,6 @@ const sampleData: User[] = [
   { id: 1, name: "Sudhanshu ", email: " sudhanshu@example.com", age: 20 },
   { id: 2, name: "Chiku ", email: "chiku@example.com", age: 19 },
   { id: 3, name: "Radhika ", email: "radhika@example.com", age: 18 },
-  { id: 4, name: "Sudhanshu R ", email: " rsudhanshu@example.com", age: 22 },
 ];
 
 function App() {
